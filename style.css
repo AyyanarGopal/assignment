@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 3% 10%;
+    background-color: #2f1893;
+    color: white;
+    font-family: sans-serif;
+}
+
+button {
+    font-size: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+header nav button{
+    background-color: #e93a7d;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 21px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.menubar span{
+    width: 35px;
+    height: 5px;
+    background: white;
+    margin: 7px;
+    border-radius: 13px;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 9vh;
+}
+
+.banner > div, .banner > form{
+    flex-basis: 44%;
+}
+
+.banner .showcase h1{
+    font-size: 4vw;
+}
+
+.banner .showcase p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.banner .showcase button{
+    background-color: #e93a7d;
+    color: white;
+    border-radius: 22px;
+    border: none;
+    padding: 14px 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.banner form{
+    padding: 37px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+}
+
+form h1{
+    color: #1e0e62;
+    font-size: 2.5em;
+}
+
+input[type="email"], [type="password"] {
+    padding: 15px 10px;
+    margin: 11px 0;
+    border-radius: 20px;
+    border: 2px solid #eaeaed;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+}
+
+form button{
+    width: 100%;
+    padding: 18px 0px;
+    background-color: #482be7;
+    color: white;
+    border: none;
+    border-radius: 24px;
+}
+
+form button:nth-of-type(2){
+    background-color: #1da1f2;
+}
+
+form p{
+    color: #b8b8c3;
+}
+
+form .another_link a{
+    color: #a1a1b0;
+    margin-top: 21px;
+    display: block;
+    text-decoration: none;
+}
+
+form .another_link a span{
+    color: #25dac4;
+}
+
+@media(max-width:992px){
+  
+    .banner > div, .banner > form{
+        flex-basis: 100%;
+        margin-bottom: 12%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menubar span{
+        display: block;
+    }
+}
+
+@media(max-width: 876px){
+    .banner .showcase h1 {
+        font-size: 5.5vw;
+    }
+    .banner .showcase p {
+        font-size: 3vw;
+    }
+}
+
+@media(max-width:480px){
+    .banner{
+        margin: 0;
+    }
+    .banner .showcase button {
+        padding: 6px 9px;
+        font-size: 3vw;
+    }
+}
+@media(max-width:320px){
+    body{
+        margin: 2%;
+    }
+    form{
+        font-size: 3vw;
+    }
+}
+
+
