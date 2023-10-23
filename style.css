@@ -14,6 +14,8 @@ button {
     font-size: 1em;
 }
 
+/* header */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -45,6 +47,8 @@ header nav button{
     border-radius: 13px;
 }
 
+/* banner */
+
 .banner{
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +79,8 @@ header nav button{
     font-size: 1em;
     letter-spacing: 1px;
 }
+
+/* banner form */
 
 .banner form{
     padding: 37px;
@@ -125,6 +131,8 @@ form .another_link a{
 form .another_link a span{
     color: #25dac4;
 }
+
+/* media query */
 
 @media(max-width:992px){
   
